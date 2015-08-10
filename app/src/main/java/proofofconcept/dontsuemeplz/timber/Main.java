@@ -26,21 +26,24 @@ public class Main implements IXposedHookLoadPackage {
             @Override
             protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
                 Activity profile_activity = (Activity)param.thisObject;
-                Toast.makeText(profile_activity.getApplicationContext(), "Timber is enabled :D", Toast.LENGTH_SHORT).show();
+                Toast.makeText(profile_activity.getApplicationContext(), "Timber for Tinder 4.2.3", Toast.LENGTH_SHORT).show();
             }
         });
 
-        findAndHookMethod("com.tinder.managers.r", lpparam.classLoader, "ad", new XC_MethodHook() {
+        findAndHookMethod("com.tinder.managers.q", lpparam.classLoader, "ak", new XC_MethodHook() {
             @Override
             protected void afterHookedMethod(MethodHookParam param) throws Throwable {
+                //4.0.5 -> "com.tinder.managers.r", lpparam.classLoader, "ad", new XC_MethodHook()
                 //XposedBridge.log("Tinder KEY_TINDER_PLUS_ENABLED boolean");
                 param.setResult(true);
             }
         });
 
-        findAndHookMethod("com.tinder.managers.r", lpparam.classLoader, "ab", new XC_MethodHook() {
+        findAndHookMethod("com.tinder.managers.q", lpparam.classLoader, "ah", new XC_MethodHook() {
             @Override
             protected void afterHookedMethod(MethodHookParam param) throws Throwable {
+                //4.0.5 -> "com.tinder.managers.r", lpparam.classLoader, "ab", new XC_MethodHook()
+
                 //XposedBridge.log("Tinder KEY_HAS_PLUS_SUBSCRIPTION_ENABLED boolean");
                 param.setResult(true);
             }
