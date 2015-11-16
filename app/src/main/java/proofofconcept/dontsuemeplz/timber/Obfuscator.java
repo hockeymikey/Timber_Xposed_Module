@@ -3,7 +3,7 @@ package proofofconcept.dontsuemeplz.timber;
 public class Obfuscator {
 
     //classes
-    public static final String TINDER_MANAGER_CLASS_KEYS = "com.tinder.managers.q"; //was r
+    public static final String TINDER_MANAGER_CLASS_KEYS = "com.tinder.managers.ae"; //was r, was q in 4.2.3
     public static final String TINDER_MODEL_CLASS = "com.tinder.model.m"; //was i
     public static final String TINDER_MANAGER_CLASS_NUMBERS = "com.tinder.managers.n";
     public static final String TINDER_FRAGMENTS_CLASS = "com.tinder.fragments.f"; // was u
