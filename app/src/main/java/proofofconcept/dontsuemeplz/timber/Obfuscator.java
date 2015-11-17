@@ -6,7 +6,7 @@ public class Obfuscator {
     public static final String TINDER_MANAGER_CLASS_KEYS = "com.tinder.managers.ae"; //was r, was q in 4.2.3
     public static final String TINDER_MODEL_CLASS = "com.tinder.model.m"; //was i
     public static final String TINDER_MANAGER_CLASS_NUMBERS = "com.tinder.managers.n";
-    public static final String TINDER_FRAGMENTS_CLASS = "com.tinder.fragments.f"; // was u
+    public static final String TINDER_FRAGMENTS_CLASS = "com.tinder.fragments.u"; // was u, f in 4.2.3 | I think its u but I don't really know.
 
     //methods
     public static final String KEY_TINDER_PLUS_ENABLED_BOOLEAN = "ak"; //was ad
